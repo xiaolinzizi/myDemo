@@ -18,6 +18,8 @@ public class HelloClient {
             System.out.println(hello.hello());
             System.out.println(hello.sayHelloTosb("zxl"));
         } catch (NotBoundException e) {
+			
+			
             e.printStackTrace();
         } catch (MalformedURLException e) {
             e.printStackTrace();
