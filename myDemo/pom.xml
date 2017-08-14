@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>myDemo</groupId>
+  <artifactId>myDemo</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>myDemo Maven Webapp</name>
+  <!-- <url>http://maven.apache.org</url>-->
+  <!-- <url>http://mvnrepository.com/</url>-->
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <spring-ver>4.1.1.RELEASE</spring-ver>
+    <ver.jackson>1.9.13</ver.jackson>
+    <var.fasterxml>2.3.0</var.fasterxml>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-test</artifactId>
+      <version>4.1.1.RELEASE</version>
+    </dependency>
+    <!--spring-->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-beans</artifactId>
+      <version>4.1.1.RELEASE</version>
+    </dependency>
+    <!-- mysql驱动包 -->
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>5.1.34</version>
+    </dependency>
+    <!-- 阿里巴巴数据源包 -->
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>druid</artifactId>
+      <version>1.0.11</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-core</artifactId>
+      <version>4.2.1.RELEASE</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <version>4.1.1.RELEASE</version>
+    </dependency>
+
+    <!--Spring Web + Spring MVC-->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-web</artifactId>
+      <version>4.1.1.RELEASE</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-webmvc</artifactId>
+      <version>4.1.1.RELEASE</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.aspectj</groupId>
+      <artifactId>aspectjrt</artifactId>
+      <version>1.6.12</version>
+    </dependency>
+    <dependency>
+      <groupId>org.aspectj</groupId>
+      <artifactId>aspectjweaver</artifactId>
+      <version>1.6.12</version>
+    </dependency>
+    <dependency>
+      <groupId>cglib</groupId>
+      <artifactId>cglib</artifactId>
+      <version>2.2</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-oxm</artifactId>
+      <version>${spring-ver}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-tx</artifactId>
+      <version>${spring-ver}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-jdbc</artifactId>
+      <version>${spring-ver}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-expression</artifactId>
+      <version>4.1.0.RELEASE</version>
+    </dependency>
+    <!-- aop begin -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-aop</artifactId>
+      <version>${spring-ver}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-orm</artifactId>
+      <version>4.1.1.RELEASE</version>
+    </dependency>
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-search</artifactId>
+      <version>5.7.0.Final</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.webflow</groupId>
+      <artifactId>spring-webflow</artifactId>
+      <version>2.4.4.RELEASE</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.security</groupId>
+      <artifactId>spring-security-core</artifactId>
+      <version>4.2.2.RELEASE</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.security</groupId>
+      <artifactId>spring-security-web</artifactId>
+      <version>4.1.1.RELEASE</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.security</groupId>
+      <artifactId>spring-security-config</artifactId>
+      <version>4.1.1.RELEASE</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.security</groupId>
+      <artifactId>spring-security-taglibs</artifactId>
+      <version>4.1.1.RELEASE</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.security</groupId>
+      <artifactId>spring-security-ldap</artifactId>
+      <version>4.1.1.RELEASE</version>
+    </dependency>
+
+    <!-- aop end -->
+    <!-- json start -->
+    <dependency>
+      <groupId>org.codehaus.jackson</groupId>
+      <artifactId>jackson-mapper-asl</artifactId>
+      <!--<version>${ver.jackson}</version>-->
+      <version>1.9.13</version>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>${var.fasterxml}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-core</artifactId>
+      <version>${var.fasterxml}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-annotations</artifactId>
+      <version>${var.fasterxml}</version>
+    </dependency>
+
+    <!-- json end -->
+    <!-- JSTL begin -->
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>jstl</artifactId>
+      <version>1.2</version>
+    </dependency>
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>3.1.0</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>javax.servlet.jsp.jstl</groupId>
+      <artifactId>jstl-api</artifactId>
+      <version>1.2</version>
+      <scope>provided</scope>
+    </dependency>
+    <!--
+    <dependency>
+        <groupId>axis</groupId>
+        <artifactId>axis-jaxrpc</artifactId>
+        <version>1.4</version>
+    </dependency>
+    -->
+
+    <dependency>
+      <groupId>taglibs</groupId>
+      <artifactId>standard</artifactId>
+      <version>1.1.2</version>
+      <scope>provided</scope>
+    </dependency>
+    <!-- JSTL end -->
+    <!-- mybatis核心包 -->
+    <dependency>
+      <groupId>org.mybatis</groupId>
+      <artifactId>mybatis</artifactId>
+      <version>3.2.8</version>
+    </dependency>
+    <!-- mybatis/spring包 -->
+    <dependency>
+      <groupId>org.mybatis</groupId>
+      <artifactId>mybatis-spring</artifactId>
+      <version>1.2.2</version>
+    </dependency>
+    <!--
+      <dependency>
+          <groupId>javax.servlet.jsp.jstl</groupId>
+          <artifactId>jstl-api</artifactId>
+          <version>1.2</version>
+          <scope>provided</scope>
+      </dependency>
+-->
+    <dependency>
+      <groupId>commons-fileupload</groupId>
+      <artifactId>commons-fileupload</artifactId>
+      <version>1.3.2</version>
+    </dependency>
+
+    <dependency>
+      <groupId>commons-io</groupId>
+      <artifactId>commons-io</artifactId>
+      <version>2.4</version>
+    </dependency>
+
+    <dependency>
+      <groupId>axis</groupId>
+      <artifactId>axis-jaxrpc</artifactId>
+      <version>1.4</version>
+    </dependency>
+    <dependency>
+      <groupId>com.elong.mobile.axis</groupId>
+      <artifactId>axis-rt-core</artifactId>
+      <version>1.1.0</version>
+      <exclusions>
+        <exclusion>
+          <groupId>javax.servlet</groupId>
+          <artifactId>servlet-api</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+
+
+
+  </dependencies>
+
+  <distributionManagement>
+    <repository>
+      <id>elongWebReleases</id>
+      <name>Elong Titan Release</name>
+      <url>http://mvn.elong.cn:8081/nexus/content/repositories/elongWebReleases</url>
+    </repository>
+    <snapshotRepository>
+      <id>elongWebSnapshots</id>
+      <name>Elong Titan Snapshot</name>
+      <url>http://mvn.elong.cn:8081/nexus/content/repositories/elongWebSnapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
+
+
+  <build>
+    <finalName>myDemo</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.7</source>
+          <target>1.7</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

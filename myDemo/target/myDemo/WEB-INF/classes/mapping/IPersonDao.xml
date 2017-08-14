@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!-- namespace 空间一致性-->
+<mapper namespace="com.cn.myself.dao.IPersonDao">
+    <sql id="Base_Column_List">
+        id ,name
+    </sql>
+
+    <insert id="addPerson" parameterType="com.cn.myself.entity.PersonEntity">
+      INSERT  into t_person (id,name) VALUES (#{person.id},#{person.name})
+    </insert>
+
+    <select id="getPersonById" parameterType="int">
+      select * FROM  t_person where id=#{id}
+    </select>
+
+</mapper>
