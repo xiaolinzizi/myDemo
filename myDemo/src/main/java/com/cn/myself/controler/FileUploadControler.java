@@ -19,6 +19,8 @@ import java.io.IOException;
 @Controller
 @RequestMapping(value="fileupload")
 public class FileUploadControler {
+	
+	
 
     @RequestMapping(value="add",method = RequestMethod.POST)
     public String addFileUpload(@RequestParam(value = "image",required = false)
