@@ -1,11 +1,12 @@
 .idea
-/.lib
 myDemo/.idea/libraries/.xml
 myDemo/.idea/artifacts/.xml
-myDemo/.idea/.xml
+myDemo/.idea/modules.xml
+myDemo/.idea/workspace.xml
 myDemo/.idea/copyright/.xml
-myDemo/.idea/.xml
 myDemo/.idea/inspectionProfiles/.xml
+
+/lib
 myDemo/lib/.xml
 myDemo/.idea/.xml
 
