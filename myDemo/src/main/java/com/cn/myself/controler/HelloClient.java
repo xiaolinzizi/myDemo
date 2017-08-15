@@ -17,10 +17,8 @@ public class HelloClient {
             IHello hello=(IHello) java.rmi.Naming.lookup("rmi://192.168.30.78:8888/RHello");
             System.out.println(hello.hello());
             System.out.println(hello.sayHelloTosb("zxl"));
-            
+
         } catch (NotBoundException e) {
-			
-			
             e.printStackTrace();
         } catch (MalformedURLException e) {
             e.printStackTrace();

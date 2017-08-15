@@ -28,7 +28,7 @@ public class CodeSourceTest {
 //        deque.addFirst("b");
 //        deque.addFirst("d");
 //        deque.addLast("c");
-        System.out.printf("deque:"+deque.t);
+        System.out.printf("deque:"+deque);
     }
 
 }
