@@ -23,4 +23,8 @@ public class Customer implements Serializable{
     public void setAge(int age) {
         this.age = age;
     }
+
+    public static void main(String[] args) {
+        String str="1234";
+    }
 }
