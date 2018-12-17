@@ -25,6 +25,6 @@ public class Customer implements Serializable{
     }
 
     public static void main(String[] args) {
-        String str="123";
+        String str="1234";
     }
 }
